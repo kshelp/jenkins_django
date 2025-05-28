@@ -1,0 +1,13 @@
+version: '3'
+services:
+  django:
+    build: .
+    image: localhost:8443/django
+    container_name: django
+    command: gunicorn mysite.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1

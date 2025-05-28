@@ -1,0 +1,10 @@
+# 패키지 설치
+# pip install -r requirements.txt
+Django>=4.2
+djangorestframework
+djangorestframework_simplejwt
+django-filter
+gunicorn
+#mysqlclient
+#pillow
+#requests
